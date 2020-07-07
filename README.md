@@ -1,7 +1,7 @@
 
 # Python Challenges
 
-## Hangman
+### Hangman
 
 It's made to play a casual round of hangman.
 
@@ -21,13 +21,13 @@ words = open("YOUR words.txt PATH").read().split()
 
 ---
 
-## Remove Spaces
+### Remove Spaces
 
 A simple programm, which removes the spaces from your input
 
 ---
 
-## Password Validator
+### Password Validator
 
 Enter a password and the programm will check for you, if it's a valid one
 
@@ -35,7 +35,7 @@ Example: *Tr$macs187* is **valid**, *icecreamcone* is **not**
 
 ---
 
-## Pig Latin
+### Pig Latin
 
 It takes an Englisch phrase
 and moves the first char of each word to the end of that word and expands the word by "ay"
@@ -44,7 +44,7 @@ Example: *"My mother is old"* -> *"yMay othermay siay ldoay"*
 
 ---
 
-## Youtube Link Finder
+### Youtube Link Finder
 
 Takes a youtube link as an input and outputs only the video ID
 
@@ -52,7 +52,7 @@ Example: *https://youtube.com/watch?v=kbxkq_w51PM* -> *kbxkq_w51PM*
 
 ---
 
-## The Spy Life
+### The Spy Life
 
 The programm takes a encoded phrase, removes all nonalphabetic characters and turns the whole phrase around.
 
