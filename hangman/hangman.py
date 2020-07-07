@@ -1,16 +1,32 @@
 # Made to play an normal round of hangman
-# First, enter a word to search for
-# then place your guessed characters
-# you have 6 misses
 
 
 import time as t
 import os
+import random
 
-searched_word = input("The word to search for goes here > ")
 misses = 0
+gamemode_picked = False
 guesses = ""
 word = ""
+words = open("Challenges\hangman\words.txt").read().split()
+
+# Choose your gamemode
+
+print("Choose your gamemode: \n 'solo' (you guess the word the game challenges you to) \n 'multi' (one player types in a word, the other has to guess it)\n")
+gamemode = input("> ")
+
+while gamemode_picked == False:
+    if(gamemode == "solo"):
+        searched_word = random.choice(words)
+        gamemode_picked = True
+    elif(gamemode == "multi"):
+        os.system('cls')
+        searched_word = input("The word to search for goes here > ")
+        gamemode_picked = True
+    else:
+        print("The given input is not a valid gamemode!")
+        gamemode = input("> ")
 
 while True:
     os.system('cls')
@@ -38,7 +54,7 @@ while True:
         misses += 1
         if(misses == 6):
             os.system('cls')
-            print("\n\nGAME OVER\n\n")
+            print("\n\nGAME OVER\nThe word was: " + searched_word + "\n\n")
             t.sleep(2)
             break
         continue
