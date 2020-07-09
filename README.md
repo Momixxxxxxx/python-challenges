@@ -19,6 +19,9 @@ If you play alone, the program will challenge you with a word, random picked fro
 words = open("YOUR words.txt PATH").read().split()
 ```
 
+You could also make your own wordlist, simply make a *your_filename*.txt document and write down your words, each one in a single line, without commas in between.
+And don't forget to link it into the *hangman.py* file, like explained above.
+
 ---
 
 ### Remove Spaces
