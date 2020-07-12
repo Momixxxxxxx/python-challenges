@@ -9,7 +9,7 @@ misses = 0
 gamemode_picked = False
 guesses = ""
 word = ""
-words = open("Challenges\hangman\words.txt").read().split()
+words = open(r"\python-challenges\hangman\words.txt").read().split()
 
 # Choose your gamemode
 
